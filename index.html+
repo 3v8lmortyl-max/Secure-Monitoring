@@ -57,7 +57,6 @@
       transform: translateY(12px); opacity:0; transition: transform .55s, opacity .55s;
     }
     .service-card.revealed{transform:none;opacity:1}
-    .service-img{width:100%;height:120px;object-fit:cover;border-radius:8px;margin-bottom:8px;background:#222}
     .service-label{color:var(--primary);font-weight:700;margin:6px 0}
     .service-desc{color:#cfeeff;font-size:.94rem;line-height:1.35;margin:0}
     .read-more-btn{margin-top:10px;background:transparent;border:1px solid rgba(24,213,255,0.14);color:var(--accent);padding:8px 12px;border-radius:8px;cursor:pointer;font-weight:700}
@@ -74,7 +73,7 @@
       margin-bottom:8px;
       position:relative;
     }
-    .image-wrap img.service-img{
+    .image-wrap img{
       width:100%;
       height:100%;
       object-fit:cover;
@@ -186,18 +185,23 @@
 
     <!-- Services grid -->
     <section class="services-grid" aria-labelledby="services-heading">
-      <!-- MONITORING (wrapped so image loads nicely and has fallback) -->
+      <!-- MONITORING -->
       <article class="service-card" data-title="MONITORING">
         <div class="image-wrap">
-          <img src="images/IMG_20251001_161137.png" alt="Monitoring" class="service-img" />
-          <div class="image-fallback" aria-hidden="true" style="display:none;">Monitoring image</div>
+          <img src="images/IMG_20251001_161137.png" alt="Monitoring" class="service-img">
+          <div class="image-fallback" style="display:none;" aria-hidden="true">Monitoring image</div>
         </div>
         <div class="service-label">MONITORING</div>
         <p class="service-desc">Our comprehensive monitoring service offers 24/7 oversight of your retail space using state-of-the-art CCTV and AI technology to detect anomalies and ensure safety.</p>
         <button class="read-more-btn" type="button">Read more</button>
-      </article><!-- THEFT PREVENTION -->
+      </article>
+
+      <!-- THEFT PREVENTION -->
       <article class="service-card" data-title="THEFT PREVENTION">
-        <img src="images/IMG_20251003_152239 (1) (1).png" class="service-img" alt="Theft Prevention">
+        <div class="image-wrap">
+          <img src="images/IMG_20251003_152239 (1) (1).png" alt="Theft Prevention" class="service-img">
+          <div class="image-fallback" style="display:none;" aria-hidden="true">Theft prevention</div>
+        </div>
         <div class="service-label">THEFT PREVENTION</div>
         <p class="service-desc">Proactive measures to deter and prevent theft, including real-time alerts and behavioral analysis to identify potential risks before they escalate.</p>
         <button class="read-more-btn" type="button">Read more</button>
@@ -205,7 +209,10 @@
 
       <!-- SHOPLIFTING -->
       <article class="service-card" data-title="SHOPLIFTING">
-        <img src="images/IMG_20251003_160711 (1).png" class="service-img" alt="Shoplifting">
+        <div class="image-wrap">
+          <img src="images/IMG_20251003_160711 (1).png" alt="Shoplifting" class="service-img">
+          <div class="image-fallback" style="display:none;" aria-hidden="true">Shoplifting</div>
+        </div>
         <div class="service-label">SHOPLIFTING</div>
         <p class="service-desc">Specialized detection systems designed to spot shoplifting attempts, with immediate notifications to staff for quick intervention.</p>
         <button class="read-more-btn" type="button">Read more</button>
@@ -213,7 +220,10 @@
 
       <!-- EMPLOYEE/SALES MONITOR -->
       <article class="service-card" data-title="EMPLOYEE/SALES MONITOR">
-        <img src="images/IMG_20251002_212249 (1).png" class="service-img" alt="Employee Sales Monitor">
+        <div class="image-wrap">
+          <img src="images/IMG_20251002_212249 (1).png" alt="Employee Sales Monitor" class="service-img">
+          <div class="image-fallback" style="display:none;" aria-hidden="true">Employee monitor</div>
+        </div>
         <div class="service-label">EMPLOYEE/SALES MONITOR</div>
         <p class="service-desc">Track employee performance and sales interactions to optimize operations, ensure compliance, and improve customer service quality.</p>
         <button class="read-more-btn" type="button">Read more</button>
@@ -221,7 +231,10 @@
 
       <!-- TIMELY ALERTS -->
       <article class="service-card" data-title="TIMELY ALERTS">
-        <img src="images/IMG_20251002_212235 (1).png" class="service-img" alt="Timely Alerts">
+        <div class="image-wrap">
+          <img src="images/IMG_20251002_212235 (1).png" alt="Timely Alerts" class="service-img">
+          <div class="image-fallback" style="display:none;" aria-hidden="true">Timely alerts</div>
+        </div>
         <div class="service-label">TIMELY ALERTS</div>
         <p class="service-desc">Instant notifications for critical events, such as unauthorized access or suspicious activities, allowing for rapid response.</p>
         <button class="read-more-btn" type="button">Read more</button>
@@ -229,23 +242,32 @@
 
       <!-- POS INTEGRATION -->
       <article class="service-card" data-title="POS INTEGRATION">
-        <img src="images/IMG_20251002_212210.png" class="service-img" alt="POS Integration">
+        <div class="image-wrap">
+          <img src="images/IMG_20251002_212210.png" alt="POS Integration" class="service-img">
+          <div class="image-fallback" style="display:none;" aria-hidden="true">POS integration</div>
+        </div>
         <div class="service-label">POS INTEGRATION</div>
         <p class="service-desc">Seamless connection with your Point of Sale systems to correlate sales data with surveillance footage for accurate auditing and fraud prevention.</p>
         <button class="read-more-btn" type="button">Read more</button>
       </article>
 
-      <!-- CUSTOM MONITORING -->
+      <!-- CUSTOM MONITORING (updated exact filename as you provided) -->
       <article class="service-card" data-title="CUSTOM MONITORING">
-        <img src="images/IMG_20251002_212149 (1).png" class="service-img" alt="Custom Monitoring">
+        <div class="image-wrap">
+          <img src="images/IMG_20251002_212149 (1) (1).png" alt="Custom Monitoring" class="service-img">
+          <div class="image-fallback" style="display:none;" aria-hidden="true">Custom monitoring</div>
+        </div>
         <div class="service-label">CUSTOM MONITORING</div>
         <p class="service-desc">Tailored monitoring solutions customized to your specific business needs, ensuring flexible and scalable security coverage.</p>
         <button class="read-more-btn" type="button">Read more</button>
       </article>
 
-      <!-- CUSTOMER LOGS (kept only here) -->
+      <!-- CUSTOMER LOGS -->
       <article class="service-card" data-title="CUSTOMER LOGS">
-        <img src="images/IMG_20251003_152803 (1).png" class="service-img" alt="Customer Logs">
+        <div class="image-wrap">
+          <img src="images/IMG_20251003_152803 (1).png" alt="Customer Logs" class="service-img">
+          <div class="image-fallback" style="display:none;" aria-hidden="true">Customer logs</div>
+        </div>
         <div class="service-label">CUSTOMER LOGS</div>
         <p class="service-desc">Detailed logging of customer visits and behaviors to provide insights into shopping patterns and enhance personalized marketing.</p>
         <button class="read-more-btn" type="button">Read more</button>
@@ -350,6 +372,7 @@
       </div>
     </div>
   </div>
+
   <!-- Service detail modal -->
   <div id="service-detail-modal" role="dialog" aria-hidden="true">
     <div class="service-detail-card" role="document" aria-labelledby="service-detail-title">
@@ -459,7 +482,7 @@ Message: ${messageText || '-'}`;
       }, { threshold: 0.12 });
       ioTargets.forEach(t => io.observe(t));
 
-      // enhance service images: wrap, add lazy loading and onerror handler
+      // enhance service images: percent-encode src, wrap, add lazy loading and onerror handler
       enhanceServiceImages();
     });
 
@@ -467,33 +490,47 @@ Message: ${messageText || '-'}`;
     function enhanceServiceImages(){
       const imgs = Array.from(document.querySelectorAll('.service-img'));
       imgs.forEach(img => {
+        // percent-encode the src to handle spaces and parentheses
+        try {
+          const raw = img.getAttribute('src') || '';
+          // Only encode path parts, leave protocol or relative root intact
+          if(raw){
+            // Use encodeURI to preserve slashes and colon, encode spaces/parens etc.
+            const encoded = encodeURI(raw);
+            if(encoded !== raw){
+              img.setAttribute('src', encoded);
+            }
+          }
+        } catch(e){
+          // ignore encoding errors
+        }
+
         // set lazy loading
         img.loading = 'lazy';
 
-        // attach onerror handler (data-driven)
+        // attach onerror handler
         img.onerror = function(){ imgLoadError(this); };
 
-        // if already inside .image-wrap skip
+        // if already inside .image-wrap skip wrapping
         if(img.closest('.image-wrap')) return;
 
-        // wrap the image in .image-wrap and insert fallback node
+        // wrap the image in .image-wrap and ensure fallback node exists
         const wrap = document.createElement('div');
         wrap.className = 'image-wrap';
-        // move img into wrap
         const parent = img.parentNode;
         parent.replaceChild(wrap, img);
         wrap.appendChild(img);
 
-        // ensure img has correct classes/styles
-        img.classList.add('service-img');
-
         // add fallback element (hidden initially)
-        const fallback = document.createElement('div');
-        fallback.className = 'image-fallback';
-        fallback.style.display = 'none';
-        fallback.setAttribute('aria-hidden','true');
-        fallback.textContent = img.alt ? img.alt : 'Image';
-        wrap.appendChild(fallback);
+        let fallback = wrap.querySelector('.image-fallback');
+        if(!fallback){
+          fallback = document.createElement('div');
+          fallback.className = 'image-fallback';
+          fallback.style.display = 'none';
+          fallback.setAttribute('aria-hidden','true');
+          fallback.textContent = img.alt ? img.alt : 'Image';
+          wrap.appendChild(fallback);
+        }
       });
     }
 
@@ -502,7 +539,6 @@ Message: ${messageText || '-'}`;
       if(!imgEl) return;
       // avoid infinite loop if fallback already tried
       if(imgEl.dataset.retry === '1'){
-        // show fallback UI
         const wrap = imgEl.closest('.image-wrap');
         if(wrap){
           const fallback = wrap.querySelector('.image-fallback');
@@ -516,31 +552,32 @@ Message: ${messageText || '-'}`;
       // mark as tried
       imgEl.dataset.retry = '1';
 
-      // try: URL-encode spaces and unusual characters (only path segment encoding)
+      // Try re-encoding using encodeURIComponent on filename portion
       try {
-        const src = imgEl.getAttribute('src') || '';
-        // split then encode each segment except protocol
-        const parts = src.split('/');
-        if(parts.length > 1){
-          const proto = parts[0].includes(':') ? parts.shift() + '/' : '';
-          const encoded = proto + parts.map(p => encodeURIComponent(decodeURIComponent(p))).join('/');
-          if(encoded !== src){
-            imgEl.src = encoded;
+        const raw = imgEl.getAttribute('src') || '';
+        if(raw){
+          // split path and encode last segment
+          const parts = raw.split('/');
+          const filename = parts.pop();
+          const encodedName = encodeURIComponent(decodeURIComponent(filename));
+          parts.push(encodedName);
+          const candidate = parts.join('/');
+          if(candidate !== raw){
+            imgEl.src = candidate;
             return;
           }
         }
       } catch(e){ /* ignore */ }
 
-      // try: lowercase filename (case-sensitive servers)
+      // Try lowercase filename (some hosts are case-sensitive)
       try {
         const u = new URL(imgEl.src, location.href);
-        const path = u.pathname;
-        const segments = path.split('/');
-        const filename = segments.pop();
-        const lower = filename.toLowerCase();
-        if(lower !== filename){
-          segments.push(lower);
-          u.pathname = segments.join('/');
+        const segs = u.pathname.split('/');
+        const file = segs.pop();
+        const lower = file.toLowerCase();
+        if(lower !== file){
+          segs.push(lower);
+          u.pathname = segs.join('/');
           imgEl.src = u.href;
           return;
         }
