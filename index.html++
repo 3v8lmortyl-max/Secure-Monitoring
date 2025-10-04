@@ -195,7 +195,7 @@
 
       <!-- CUSTOM MONITORING -->
       <article class="service-card" data-title="CUSTOM MONITORING">
-        <img src="images/IMG_20251002_212149 (1).png" class="service-img" alt="Custom Monitoring">
+        <img src="images/IMG_20251002_212149(1).png" class="service-img" alt="Custom Monitoring">
         <div class="service-label">CUSTOM MONITORING</div>
         <p class="service-desc">Tailored monitoring solutions customized to your specific business needs, ensuring flexible and scalable security coverage.</p>
         <button class="read-more-btn" type="button">Read more</button>
